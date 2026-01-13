@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/static/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>XyliUploader</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="/static/favicon.ico" alt="logo" class="logo">
+            <h1 class="title">XyliUploader</h1>
+        </header>
+
+        <div class="upload-section">
+            <div class="drop-zone" id="dropZone">
+                <svg class="upload-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M17 8l-5-5-5 5M12 3v12"/>
+                </svg>
+                <p class="drop-text">Перетащите или выберите файл</p>
+                <p class="drop-limit">Максимум 100 MB</p>
+                <input type="file" id="fileInput" hidden>
+            </div>
+            <button class="upload-btn" id="uploadBtn">Upload</button>
+        </div>
+
+        <div class="history-section" id="historySection">
+            <h2 class="history-title">Загруженные файлы</h2>
+            <div class="table-container">
+                <table class="history-table">
+                    <thead>
+                        <tr>
+                            <th>Файл</th>
+                            <th>Дата</th>
+                            <th>Ссылка</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="historyBody">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <a href="static/tos.txt" class="footer-link">Условия использования</a>
+            <a href="/integrations" class="footer-link">Интеграция с сервисами</a>
+            <a href="https://github.com/manukek" target="_blank" class="footer-link">GitHub</a>
+            <a href="https://t.me/ugolokmanukq" class="footer-link">Автор</a>
+        </footer>
+    </div>
+
+    <div class="toast" id="toast">
+        <span>Скопировано</span>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/static/favicon.ico">
+    <title>{{.Filename}}</title>
+    <link rel="stylesheet" href="/static/viewer_file.css">
+</head>
+<body>
+    <div class="file-container">
+        <div class="file-card">
+            <div class="file-icon">
+                <svg viewBox="0 0 100 100">
+                    <rect x="20" y="10" width="60" height="80" rx="5" fill="#333"/>
+                    <rect x="30" y="25" width="40" height="5" fill="#555" rx="2"/>
+                    <rect x="30" y="35" width="40" height="5" fill="#555" rx="2"/>
+                    <rect x="30" y="45" width="30" height="5" fill="#555" rx="2"/>
+                </svg>
+            </div>
+            <div class="file-name">{{.Filename}}</div>
+            <div class="file-size">{{.FileSize}}</div>
+            <a href="/raw/{{.FileID}}" class="download-btn" download="{{.Filename}}">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

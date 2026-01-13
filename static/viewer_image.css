@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    background: #121212;
+    font-family: system-ui, -apple-system, sans-serif;
+    overflow: hidden;
+}
+
+#container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: zoom-in;
+}
+
+#container.zoomed {
+    cursor: grab;
+}
+
+#container.zoomed:active {
+    cursor: grabbing;
+}
+
+#image {
+    user-select: none;
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.download-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 56px;
+    height: 56px;
+    background: white;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    transition: all 0.3s;
+    color: #121212;
+    z-index: 10;
+}
+
+.download-btn:hover {
+    background: #e0e0e0;
+    border-color: white;
+    box-shadow: 0 0 20px rgba(255,255,255,0.3);
+}
+
+.download-btn svg {
+    width: 24px;
+    height: 24px;
+}
+
+@media (max-width: 768px) {
+    .download-btn {
+        width: 48px;
+        height: 48px;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .download-btn svg {
+        width: 20px;
+        height: 20px;
+    }
+}

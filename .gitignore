@@ -1,0 +1,7 @@
+config.json
+.env
+*.log
+xyliuploader
+xyliuploader.exe
+node_modules/
+.DS_Store

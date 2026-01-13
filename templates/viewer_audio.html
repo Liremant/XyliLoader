@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/static/favicon.ico">
+    <title>{{.Filename}}</title>
+    <link rel="stylesheet" href="/static/viewer_audio.css">
+</head>
+<body>
+    <div class="audio-container">
+        <div class="audio-player">
+            <div class="cover">
+                <svg viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="45" fill="#333"/>
+                    <path d="M40 30 L40 70 L65 50 Z" fill="#555"/>
+                </svg>
+            </div>
+            <div class="info">
+                <div class="title">{{.Filename}}</div>
+            </div>
+            <div class="controls">
+                <audio id="audio" controls preload="metadata">
+                    <source src="/raw/{{.FileID}}">
+                </audio>
+                <a href="/raw/{{.FileID}}" class="download-btn" download="{{.Filename}}">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

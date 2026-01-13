@@ -1,0 +1,146 @@
+TERMS OF SERVICE AND PRIVACY POLICY
+
+XyliUploader - Effective Date: January 14, 2026
+
+These Terms of Service ("Terms") govern your use of this Service, and our commitment to your privacy.
+
+================================================================================
+TERMS OF SERVICE
+================================================================================
+
+1. USER AGREEMENT
+
+1.1. By using the Service, you agree to these Terms of Service and all applicable laws.
+
+1.2. If you do not agree, you must discontinue your use immediately.
+
+1.3. The Service reserves the right to modify these Terms at any time.
+
+2. RESPONSIBILITY FOR UPLOADED CONTENT
+
+2.1. The Service is not responsible for the content of uploaded materials.
+
+2.2. Uploaded content reflects only the author's point of view.
+
+2.3. Users are solely responsible for ensuring uploaded content complies with all applicable laws
+and does not violate third-party rights.
+
+3. COPYRIGHT
+
+3.1. Users undertake not to upload, transmit, or exchange files that violate the copyrights,
+trademarks, or intellectual property rights of third parties.
+
+3.2. The Service has the right to remove any materials violating copyrights without prior notice.
+
+3.3. Repeated copyright violations may result in account termination.
+
+4. PROHIBITED MATERIALS
+
+4.1. Uploading is strictly prohibited for:
+
+   - Files containing viruses, malware, or other malicious code
+   - Pornography, child exploitation material, or calls for violence
+   - Hate speech, discrimination, or illegal content
+   - Personal information of others without consent
+   - Stolen data, leaked databases, or confidential information
+   - Any content violating laws and moral standards
+
+4.2. The Service may not be used for:
+
+   - Creating, hosting, or distributing bots and their content
+   - Hosting bot API keys, databases, logs, scripts
+   - Distributing pirated software or digital content
+   - Operating automated services that violate these Terms
+   - Conducting cyberattacks or abuse
+
+4.3. Violations may result in account termination and legal action.
+
+5. FILE LIMITATIONS
+
+5.1. Maximum file size per upload: 100 megabytes
+
+5.2. Files not accessed for extended periods may be automatically deleted.
+
+5.3. The Service reserves the right to implement rate limiting or quotas.
+
+6. DISCLAIMERS
+
+6.1. THE SERVICE IS PROVIDED "AS IS" WITHOUT ANY WARRANTIES, EXPRESS OR IMPLIED.
+
+6.2. The Service is NOT responsible for:
+
+   - Data loss or corruption
+   - Service interruptions or downtime
+   - Unauthorized access by third parties
+   - Loss of profits or business opportunities
+
+6.3. In no event shall the Service be liable for damages exceeding 100 rubles.
+
+7. MODIFICATION AND REMOVAL
+
+7.1. The Service reserves the right to modify or remove content violating these Terms without notice.
+
+7.2. Deleted content cannot be recovered.
+
+7.3. Once content is shared via a public link, it may be viewed or redistributed by others.
+
+8. TERMINATION
+
+8.1. The Service may terminate your access immediately for violating these Terms.
+
+8.2. Upon termination, all uploaded files may be permanently deleted.
+
+================================================================================
+PRIVACY POLICY
+================================================================================
+
+1. DATA COLLECTION
+
+1.1. The Service may collect minimal data for operating and improving the Service:
+
+   - IP address and geographic location
+   - User-Agent and browser information
+   - Access logs and timestamps
+   - File metadata
+
+1.2. This data is used to detect abuse, improve performance, and comply with legal requirements.
+
+1.3. Information will NOT be shared with third parties.
+
+2. DATA STORAGE
+
+2.1. The Service employs reasonable security measures to protect data.
+
+2.2. However, no system is completely secure. Users are responsible for their link confidentiality.
+
+2.3. Users have the right to request deletion of their data at any time.
+
+3. DATA RETENTION
+
+3.1. Uploaded files are retained until deleted by the user or automatically removed due to inactivity.
+
+3.2. Access logs are retained for a reasonable period and then purged.
+
+3.3. Data may be retained longer if required by law.
+
+4. LEGAL COMPLIANCE
+
+4.1. The Service may disclose user information if required by:
+
+   - Court orders or legal subpoenas
+   - Law enforcement requests
+   - Applicable laws and regulations
+
+5. CHANGES IN POLICY
+
+5.1. The Service reserves the right to modify this policy at any time.
+
+5.2. Changes are effective immediately upon posting.
+
+5.3. Continued use constitutes acceptance of changes.
+
+================================================================================
+
+Service: img.xyli.eu
+
+Last Updated: January 14, 2026
