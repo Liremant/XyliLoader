@@ -121,6 +121,29 @@ func jsonError(w http.ResponseWriter, message string, status int) {
 	json.NewEncoder(w).Encode(map[string]string{"error": message})
 }
 
+func wantsRawFile(r *http.Request) bool {
+	accept := r.Header.Get("Accept")
+	userAgent := strings.ToLower(r.Header.Get("User-Agent"))
+
+	if accept != "" && !strings.Contains(accept, "text/html") {
+		return true
+	}
+
+	crawlers := []string{
+		"curl", "wget", "bot", "crawler", "spider",
+		"chatterino", "discord", "telegram", "slack",
+		"whatsapp", "preview", "embed",
+	}
+
+	for _, crawler := range crawlers {
+		if strings.Contains(userAgent, crawler) {
+			return true
+		}
+	}
+
+	return false
+}
+
 func main() {
 	defer client.Disconnect(context.Background())
 
@@ -161,8 +184,9 @@ func main() {
 		defer cursor.Close(ctx)
 
 		var fileDoc struct {
-			Filename string `bson:"filename"`
-			Length   int64  `bson:"length"`
+			ID       interface{} `bson:"_id"`
+			Filename string      `bson:"filename"`
+			Length   int64       `bson:"length"`
 			Metadata struct {
 				ContentType string `bson:"content_type"`
 			} `bson:"metadata"`
@@ -176,6 +200,20 @@ func main() {
 		err = cursor.Decode(&fileDoc)
 		if err != nil {
 			http.Error(w, "decode error", http.StatusInternalServerError)
+			return
+		}
+
+		if wantsRawFile(r) {
+			downloadStream, err := gfsBucket.OpenDownloadStream(fileDoc.ID)
+			if err != nil {
+				http.Error(w, "download error", http.StatusInternalServerError)
+				return
+			}
+			defer downloadStream.Close()
+
+			w.Header().Set("Content-Type", fileDoc.Metadata.ContentType)
+			w.Header().Set("Content-Disposition", fmt.Sprintf("inline; filename=\"%s\"", fileDoc.Filename))
+			io.Copy(w, downloadStream)
 			return
 		}
 
